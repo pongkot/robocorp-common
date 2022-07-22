@@ -28,5 +28,10 @@ Browser: Unselect Checkbox
 
 Browser: Select Checkbox
     [Arguments]    ${locator}
-    Unselect Checkbox	${locator}
+    Unselect Checkbox    ${locator}
+    RETURN
+
+Browser: Select From List By Value
+    [Arguments]    ${locator}    ${value}
+    Select From List By Value    ${locator}    ${value}
     RETURN
