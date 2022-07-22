@@ -35,3 +35,8 @@ Browser: Select From List By Value
     [Arguments]    ${locator}    ${value}
     Select From List By Value    ${locator}    ${value}
     RETURN
+
+Browser: Select Radio Button
+    [Arguments]    ${group_name}    ${value}
+    Select Radio Button    ${group_name}    ${value}
+    RETURN
