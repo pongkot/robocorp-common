@@ -4,7 +4,7 @@ A wrap keyword library for Robocorp Automation Studio
 
 # Keywords
 
-## RPA.Browser
+### RPA.Browser
 
 | Users Keyword | Input Arguments |
 | :--- | :--- |
