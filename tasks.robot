@@ -18,5 +18,15 @@ Browser: Does Page Contain
     RETURN
 
 Browser: Reload Page
-	Reload Page
+    Reload Page
+    RETURN
+
+Browser: Unselect Checkbox
+    [Arguments]    ${locator}
+    Unselect Checkbox    ${locator}
+    RETURN
+
+Browser: Select Checkbox
+    [Arguments]    ${locator}
+    Unselect Checkbox	${locator}
     RETURN
