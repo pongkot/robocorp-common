@@ -16,3 +16,7 @@ Browser: Does Page Contain
     [Arguments]    ${text}
     Does Page Contain    ${text}
     RETURN
+
+Browser: Reload Page
+	Reload Page
+    RETURN
