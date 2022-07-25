@@ -4,7 +4,7 @@ Library     RPA.Browser.Selenium
 
 *** Tasks ***
 Default
-    ${result}=    Builtin: Convert To Number    42.512    -1
+    ${result}=    Built-In: Get Time    YYYY-MM-DD hh:mm:ss
     Log    ${result}
 
 
@@ -43,7 +43,12 @@ Browser: Select Radio Button
     Select Radio Button    ${group_name}    ${value}
     RETURN
 
-Builtin: Convert To Number
+Built-In: Convert To Number
     [Arguments]    ${item}    ${precision}
     ${result}=    Convert To Number    ${item}    precision=${precision}
+    RETURN    ${result}
+
+Built-In: Get Time
+    [Arguments]    ${format}
+    ${result}=    Get Time    format=${format}
     RETURN    ${result}
