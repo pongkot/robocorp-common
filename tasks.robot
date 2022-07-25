@@ -4,6 +4,8 @@ Library     RPA.Browser.Selenium
 
 *** Tasks ***
 Default
+    ${result}=    Builtin: Convert To Number    42.512    -1
+    Log    ${result}
 
 
 *** Keywords ***
@@ -40,3 +42,8 @@ Browser: Select Radio Button
     [Arguments]    ${group_name}    ${value}
     Select Radio Button    ${group_name}    ${value}
     RETURN
+
+Builtin: Convert To Number
+    [Arguments]    ${item}    ${precision}
+    ${result}=    Convert To Number    ${item}    precision=${precision}
+    RETURN    ${result}
