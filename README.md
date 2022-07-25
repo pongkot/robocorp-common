@@ -15,3 +15,9 @@ A wrap keyword library for Robocorp Automation Studio
 | Browser: Select Checkbox | N/A |
 | Browser: Select From List By Value | N/A |
 | Browser: Select Radio Button | N/A |
+
+### BuiltIn
+
+| Users Keyword | Input Arguments |
+| :--- | :--- |
+| Built-In: Convert To Number | item, precision |
