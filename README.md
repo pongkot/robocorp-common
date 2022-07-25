@@ -21,3 +21,4 @@ A wrap keyword library for Robocorp Automation Studio
 | Users Keyword | Input Arguments |
 | :--- | :--- |
 | Built-In: Convert To Number | item, precision |
+| Built-In: Get Time | format |
